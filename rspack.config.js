@@ -24,6 +24,18 @@ const config = {
         ],
       },
       {
+        test: /\.png$/,
+        type: 'asset',
+      },
+      {
+        test: /\.jpg$/,
+        type: 'asset',
+      },
+      {
+        test: /\.svg$/,
+        type: 'asset',
+      },
+      {
         test: /\.vue$/,
         use: [
           {
@@ -45,7 +57,8 @@ const config = {
       chunks: 'all',
     },
   },
-  devServer: {
+  devServer: {    
+    port: 3333,
     hot: true,
     historyApiFallback: true,
   },
